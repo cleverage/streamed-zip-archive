@@ -1,0 +1,26 @@
+{
+    "name": "cleverage/streamed-zip-archive",
+    "description": "Create a ZIP in memory, using an external binary",
+    "keywords": [
+        "zip"
+    ],
+    "homepage": "https://github.com/cleverage/streamed-zip-archive",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valentin Clavreul",
+            "email": "vclavreul@clever-age.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CleverAge\\StreamedZipArchive\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "symfony/process": "^4.0"
+    }
+}
