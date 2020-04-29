@@ -8,6 +8,11 @@ It only requires [Symfony's Process Component](https://symfony.com/doc/current/c
 - `tee`: should be always available with unix systems
 - `realpath`: GNU's coreutils version (not by default with Alpine !)
 
+You can use this lib if you have for example :
+- a streamed input, or a raw string
+- only need to create a temporary zip with will be downloaded on the fly
+- high storage constraint (low space, or the need to with nothing on the hard drive)
+
 ## Installation
 
 Install `zip` on your OS.
@@ -21,7 +26,7 @@ For Alpine users, you might want to install `coreutils`.
 ## Usage
 
 ```php
-// Open some files, or fetch some data
+// Open some files, or fetch some data from an URL, a database, Flysystem ...
 $pdf = fopen('file.pdf', 'r');
 $data = '...';
 
